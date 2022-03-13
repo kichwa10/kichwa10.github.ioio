@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+         Menu</title>
+    <style>
+        .body{
+            margin: 0px;
+        }
+        .menu {
+            position: absolute;
+            height: 100%;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+        .menu.hover{
+            /* display: block; */
+            position: absolute;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+
+        /* .active, .menu:hover {
+            background-color: lightblue;
+            transform: translate3d(-20px, 0, 0);
+
+        } */
+
+        .menuitem{
+            position: relative;
+            display: block;
+            padding: 10px 20px 10px 20px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+        .menuitem:hover {
+            background-color: gray;
+            /* display: none; */
+        }
+
+        .dropdown {
+            width: 140px;
+            display: inline-block;
+            background-color: lightblue;
+            position: absolute;
+            display: none;
+            padding: 0%;
+            top: 0px;
+            left: 89px;
+
+        } 
+
+        .menuitem:hover .dropdown{
+            display: block;
+        }
+
+        .dropdownitem {
+            padding: 10px;
+
+        }
+        .dropdownitem:hover {
+            background-color: gray;
+
+        }
+        .dropdownitem a {
+            color: black;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menuitem">
+            Menu 1
+            <div class="dropdown">
+                <div class="dropdownitem">dropdown item</div>
+                <div class="dropdownitem">dropdown item</div>
+                <div class="dropdownitem">dropdown item</div>
+                <div class="dropdownitem"><a href="https://www.google.com/">Google.com</a></div>
+            </div>
+        </div>
+        <div class="menuitem">
+            Menu 2
+            <div class="dropdown">
+                <div class="dropdownitem">dropdown item</div>
+                <div class="dropdownitem">dropdown item</div>
+            </div></div>
+        <div class="menuitem">
+            Menu 3
+            <div class="dropdown">
+                <div class="dropdownitem">dropdown item</div>
+                <div class="dropdownitem">dropdown item</div>
+                <div class="dropdownitem">dropdown item</div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
